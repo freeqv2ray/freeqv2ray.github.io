@@ -1,4 +1,4 @@
-# 免费QV2ray节点 - 5月22日20.1M/S|免费Shadowrocket/V2ray/Clash/SSR订阅机场分享  更新时间 2025-05-22 09:01:25
+# 免费QV2ray节点 - 5月27日20.1M/S|免费Clash/V2ray/Shadowrocket/SSR订阅机场分享  更新时间 2025-05-27 10:05:57
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://freeqv2ray.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://freeqv2ray.github.io/uploads/2025/05/0-20250522.yaml
-- https://freeqv2ray.github.io/uploads/2025/05/1-20250522.yaml
-- https://freeqv2ray.github.io/uploads/2025/05/2-20250522.yaml
-- https://freeqv2ray.github.io/uploads/2025/05/3-20250522.yaml
-- https://freeqv2ray.github.io/uploads/2025/05/4-20250522.yaml
+- https://freeqv2ray.github.io/uploads/2025/05/0-20250527.yaml
+- https://freeqv2ray.github.io/uploads/2025/05/1-20250527.yaml
+- https://freeqv2ray.github.io/uploads/2025/05/2-20250527.yaml
+- https://freeqv2ray.github.io/uploads/2025/05/3-20250527.yaml
+- https://freeqv2ray.github.io/uploads/2025/05/4-20250527.yaml
 
 ### V2ray订阅链接
 
-- https://freeqv2ray.github.io/uploads/2025/05/0-20250522.txt
-- https://freeqv2ray.github.io/uploads/2025/05/1-20250522.txt
-- https://freeqv2ray.github.io/uploads/2025/05/2-20250522.txt
-- https://freeqv2ray.github.io/uploads/2025/05/3-20250522.txt
-- https://freeqv2ray.github.io/uploads/2025/05/4-20250522.txt
+- https://freeqv2ray.github.io/uploads/2025/05/0-20250527.txt
+- https://freeqv2ray.github.io/uploads/2025/05/1-20250527.txt
+- https://freeqv2ray.github.io/uploads/2025/05/2-20250527.txt
+- https://freeqv2ray.github.io/uploads/2025/05/3-20250527.txt
+- https://freeqv2ray.github.io/uploads/2025/05/4-20250527.txt
 
 ### Sing-box订阅链接
 
-- https://freeqv2ray.github.io/uploads/2025/05/20250522.json
+- https://freeqv2ray.github.io/uploads/2025/05/20250527.json
 
 ## 更多clash节点订阅 ：
 
