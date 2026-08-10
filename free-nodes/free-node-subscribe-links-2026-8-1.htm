@@ -226,14 +226,19 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的 TUN 模式与 SOCKS 模式有何差异？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 是什么？</h5></div>
     <div class="panel-body">
-        TUN 模式通过虚拟网卡拦截所有流量，更接近系统级代理；SOCKS 模式则仅作用于指定应用。TUN 模式更适合全局代理需求，而 SOCKS 模式轻量快捷，适用于游戏或单软件加速。<hr />    </div>
+        Sing-box 是新一代多协议代理框架，支持 VMess、VLess、Trojan、Hysteria、ShadowTLS 等协议。它比传统 V2Ray 更轻量化、模块化，并针对移动端和 Linux 系统进行了性能优化，受到开发者和高级用户的欢迎。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + Reality 模式如何隐藏流量特征？</h5></div>
+    <div class="panel-heading"><h5>Netch 可以做什么？</h5></div>
     <div class="panel-body">
-        Reality 模式通过伪装握手和真实网站特征，使流量难以被 DPI 检测。结合策略组使用，可有效隐藏节点通信特征，同时保持安全和高速传输，适合高封锁环境。<hr />    </div>
+        Netch 是一款 Windows 平台的网络加速工具，支持基于 V2Ray、Socks5、Shadowsocks 等协议的代理。它可用于加速游戏、视频或网站访问，并能通过 TAP 模式实现系统级代理，广受游戏玩家喜爱。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
+    <div class="panel-body">
+        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 Routing 设置可以实现什么？</h5></div>
@@ -246,9 +251,14 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
         全局代理会将所有流量通过节点转发，适合游戏或全局科学上网；规则代理只针对指定应用或 IP 走节点，优化带宽利用和网络效率，根据不同需求选择使用模式。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 可以做什么？</h5></div>
+    <div class="panel-heading"><h5>VLESS + Reality 模式如何隐藏流量特征？</h5></div>
     <div class="panel-body">
-        Netch 是一款 Windows 平台的网络加速工具，支持基于 V2Ray、Socks5、Shadowsocks 等协议的代理。它可用于加速游戏、视频或网站访问，并能通过 TAP 模式实现系统级代理，广受游戏玩家喜爱。<hr />    </div>
+        Reality 模式通过伪装握手和真实网站特征，使流量难以被 DPI 检测。结合策略组使用，可有效隐藏节点通信特征，同时保持安全和高速传输，适合高封锁环境。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的 TUN 模式与 SOCKS 模式有何差异？</h5></div>
+    <div class="panel-body">
+        TUN 模式通过虚拟网卡拦截所有流量，更接近系统级代理；SOCKS 模式则仅作用于指定应用。TUN 模式更适合全局代理需求，而 SOCKS 模式轻量快捷，适用于游戏或单软件加速。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
@@ -256,24 +266,14 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
         PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
+    <div class="panel-heading"><h5>Trojan 的伪装域名如何正确配置？</h5></div>
     <div class="panel-body">
-        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
+        伪装域名必须真实可访问且证书有效，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁和检测风险，提高节点安全性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何设置流量配额限制？</h5></div>
     <div class="panel-body">
-        管理员可在 Hiddify Next 面板为每个用户设置流量上限或带宽限制。超过配额后可自动阻止或降速，保证服务器资源合理分配，防止单用户占用过多带宽。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 是什么？</h5></div>
-    <div class="panel-body">
-        Sing-box 是新一代多协议代理框架，支持 VMess、VLess、Trojan、Hysteria、ShadowTLS 等协议。它比传统 V2Ray 更轻量化、模块化，并针对移动端和 Linux 系统进行了性能优化，受到开发者和高级用户的欢迎。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名如何正确配置？</h5></div>
-    <div class="panel-body">
-        伪装域名必须真实可访问且证书有效，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁和检测风险，提高节点安全性和长期可用性。    </div>
+        管理员可在 Hiddify Next 面板为每个用户设置流量上限或带宽限制。超过配额后可自动阻止或降速，保证服务器资源合理分配，防止单用户占用过多带宽。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -321,16 +321,16 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-22-free-clash.htm" title="免费QV2ray节点 - 7月22日22.5M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点订阅机场分享">免费QV2ray节点 - 7月22日22.5M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-25-free-clash-subscribe.htm" title="免费QV2ray节点 - 6月25日23M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅机场分享">免费QV2ray节点 - 6月25日23M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-free-v2ray-subscribe.htm" title="免费QV2ray节点 - 7月21日18.3M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场分享">免费QV2ray节点 - 7月21日18.3M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-7-29.htm" title="免费QV2ray节点 - 7月29日21.2M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅机场分享">免费QV2ray节点 - 7月29日21.2M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-20-node-share.htm" title="免费QV2ray节点 - 7月20日22.2M/S|免费SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点订阅机场分享">免费QV2ray节点 - 7月20日22.2M/S|免费SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-16-free-node-subscribe.htm" title="免费QV2ray节点 - 6月16日22.3M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Clash节点订阅机场分享">免费QV2ray节点 - 6月16日22.3M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Clash节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-30-free-shadowrocket-node.htm" title="免费QV2ray节点 - 7月30日20.3M/S|免费SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅机场分享">免费QV2ray节点 - 7月30日20.3M/S|免费SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-26-free-node-subscribe.htm" title="免费QV2ray节点 - 7月26日22.5M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场分享">免费QV2ray节点 - 7月26日22.5M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-9-node-share-links.htm" title="免费QV2ray节点 - 7月9日20.1M/S|免费SSR节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点订阅机场分享">免费QV2ray节点 - 7月9日20.1M/S|免费SSR节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-10-clash-node-daily-updates.htm" title="免费QV2ray节点 - 6月10日21.8M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅机场分享">免费QV2ray节点 - 6月10日21.8M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-12-node-share.htm" title="免费QV2ray节点 - 7月12日22.6M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点订阅机场分享">免费QV2ray节点 - 7月12日22.6M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-10-free-ssr-subscribe.htm" title="免费QV2ray节点 - 8月10日18M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅机场分享">免费QV2ray节点 - 8月10日18M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-2-free-shadowrocket-node.htm" title="免费QV2ray节点 - 7月2日22.1M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点订阅机场分享">免费QV2ray节点 - 7月2日22.1M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-23-free-subscribe-node.htm" title="免费QV2ray节点 - 7月23日19.3M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点订阅机场分享">免费QV2ray节点 - 7月23日19.3M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-1-clash-windows.htm" title="免费QV2ray节点 - 7月1日20M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅机场分享">免费QV2ray节点 - 7月1日20M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-30-clash-v2ray-ss-ssr.htm" title="免费QV2ray节点 - 6月30日21.5M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/Clash节点订阅机场分享">免费QV2ray节点 - 6月30日21.5M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/Clash节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-7-31.htm" title="免费QV2ray节点 - 7月31日20.9M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅机场分享">免费QV2ray节点 - 7月31日20.9M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-9-free-high-speed-nodes.htm" title="免费QV2ray节点 - 6月9日18.3M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点订阅机场分享">免费QV2ray节点 - 6月9日18.3M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-15-free-v2ray-subscribe.htm" title="免费QV2ray节点 - 6月15日21.3M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅机场分享">免费QV2ray节点 - 6月15日21.3M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-28-clash-v2ray-ss-ssr.htm" title="免费QV2ray节点 - 6月28日20.5M/S|免费Clash节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点订阅机场分享">免费QV2ray节点 - 6月28日20.5M/S|免费Clash节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点订阅机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -342,7 +342,7 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">10</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
