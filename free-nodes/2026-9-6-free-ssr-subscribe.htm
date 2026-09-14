@@ -142,24 +142,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的 PAC 模式有什么优势？</h5></div>
-    <div class="panel-body">
-        PAC 模式可根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问环境，提高网络访问速度和稳定性，同时减少误操作导致的访问失败。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 能否自动更新订阅？</h5></div>
-    <div class="panel-body">
-        支持。Shadowrocket 可以设置定时更新周期，例如每隔 12 小时或每天自动刷新订阅链接，确保节点列表保持最新状态。这样无需手动更新即可长期稳定使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
     <div class="panel-body">
         两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 的延迟测试如何影响策略组选择？</h5></div>
-    <div class="panel-body">
-        PassWall2 会根据节点延迟结果更新策略组的优先节点，自动选择延迟最低的节点处理流量。这样可以优化访问速度，提高网页浏览、视频和游戏体验的稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 的 TUN 模式与 SOCKS 模式有何差异？</h5></div>
@@ -167,9 +152,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         TUN 模式通过虚拟网卡拦截所有流量，更接近系统级代理；SOCKS 模式则仅作用于指定应用。TUN 模式更适合全局代理需求，而 SOCKS 模式轻量快捷，适用于游戏或单软件加速。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 支持订阅链接导入吗？</h5></div>
+    <div class="panel-heading"><h5>PassWall2 的规则优先级如何设置？</h5></div>
     <div class="panel-body">
-        Potatso Lite 不支持自动订阅功能，用户需手动添加节点。如果想批量导入订阅，可使用其他客户端生成节点二维码，再手动扫描添加。适合轻量使用者。<hr />    </div>
+        在 PassWall2 中，规则的匹配顺序按配置文件自上而下执行。建议将精确规则放在前面，通用规则放后面，以确保高优先级的流量优先被正确分流到指定出口。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 的延迟测试如何影响策略组选择？</h5></div>
+    <div class="panel-body">
+        PassWall2 会根据节点延迟结果更新策略组的优先节点，自动选择延迟最低的节点处理流量。这样可以优化访问速度，提高网页浏览、视频和游戏体验的稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 如何导入 URL 格式的订阅？</h5></div>
@@ -177,19 +167,29 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         在 Potatso Lite 的配置页点击“导入”，粘贴订阅链接并确认导入。系统会自动解析节点列表，可在主界面查看并选择不同线路。部分机场支持一键导入格式，省去手动配置步骤。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统全局代理有何区别？</h5></div>
-    <div class="panel-body">
-        TUN 模式直接拦截 IP 层流量，不依赖应用代理设置，系统全局代理通常只影响支持 HTTP/HTTPS 的程序。TUN 更适合全局科学上网和游戏环境。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的 PAC 模式如何优化访问？</h5></div>
     <div class="panel-body">
         PAC 模式可根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 的规则优先级如何设置？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 能否自动更新订阅？</h5></div>
     <div class="panel-body">
-        在 PassWall2 中，规则的匹配顺序按配置文件自上而下执行。建议将精确规则放在前面，通用规则放后面，以确保高优先级的流量优先被正确分流到指定出口。    </div>
+        支持。Shadowrocket 可以设置定时更新周期，例如每隔 12 小时或每天自动刷新订阅链接，确保节点列表保持最新状态。这样无需手动更新即可长期稳定使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 支持订阅链接导入吗？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 不支持自动订阅功能，用户需手动添加节点。如果想批量导入订阅，可使用其他客户端生成节点二维码，再手动扫描添加。适合轻量使用者。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统全局代理有何区别？</h5></div>
+    <div class="panel-body">
+        TUN 模式直接拦截 IP 层流量，不依赖应用代理设置，系统全局代理通常只影响支持 HTTP/HTTPS 的程序。TUN 更适合全局科学上网和游戏环境。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的 PAC 模式有什么优势？</h5></div>
+    <div class="panel-body">
+        PAC 模式可根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问环境，提高网络访问速度和稳定性，同时减少误操作导致的访问失败。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -237,16 +237,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-7.htm" title="免费QV2ray节点 - 8月7日22.2M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅机场分享">免费QV2ray节点 - 8月7日22.2M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-clash.htm" title="免费QV2ray节点 - 8月28日23M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点订阅机场分享">免费QV2ray节点 - 8月28日23M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-node-share.htm" title="免费QV2ray节点 - 8月6日21.6M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅机场分享">免费QV2ray节点 - 8月6日21.6M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-12-free-node-subscribe.htm" title="免费QV2ray节点 - 8月12日22.3M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点订阅机场分享">免费QV2ray节点 - 8月12日22.3M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-clash-node.htm" title="免费QV2ray节点 - 8月14日20.5M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅机场分享">免费QV2ray节点 - 8月14日20.5M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-10-free-ssr-subscribe.htm" title="免费QV2ray节点 - 8月10日18M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅机场分享">免费QV2ray节点 - 8月10日18M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-9.htm" title="免费QV2ray节点 - 9月9日18M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅机场分享">免费QV2ray节点 - 9月9日18M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-27.htm" title="免费QV2ray节点 - 8月27日22.1M/S|免费Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Singbox节点订阅机场分享">免费QV2ray节点 - 8月27日22.1M/S|免费Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Singbox节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-free-ssr-subscribe.htm" title="免费QV2ray节点 - 9月6日18.1M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅机场分享">免费QV2ray节点 - 9月6日18.1M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-8-clash-v2ray-ss-ssr.htm" title="免费QV2ray节点 - 8月8日22M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅机场分享">免费QV2ray节点 - 8月8日22M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-8-clash-node-daily-updates.htm" title="免费QV2ray节点 - 9月8日19.9M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点订阅机场分享">免费QV2ray节点 - 9月8日19.9M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-20-free-ssr-subscribe.htm" title="免费QV2ray节点 - 8月20日18.3M/S|免费Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅机场分享">免费QV2ray节点 - 8月20日18.3M/S|免费Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-18-free-clash.htm" title="免费QV2ray节点 - 8月18日20M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点订阅机场分享">免费QV2ray节点 - 8月18日20M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点订阅机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-16-free-clash.htm" title="免费QV2ray节点 - 8月16日23M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点订阅机场分享">免费QV2ray节点 - 8月16日23M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-24-clash-node-daily-updates.htm" title="免费QV2ray节点 - 8月24日22.6M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点订阅机场分享">免费QV2ray节点 - 8月24日22.6M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-26-clash-v2ray-ss-ssr.htm" title="免费QV2ray节点 - 8月26日18M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场分享">免费QV2ray节点 - 8月26日18M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-30-free-shadowrocket-node.htm" title="免费QV2ray节点 - 8月30日19.6M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场分享">免费QV2ray节点 - 8月30日19.6M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-1.htm" title="免费QV2ray节点 - 9月1日22.5M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点订阅机场分享">免费QV2ray节点 - 9月1日22.5M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点订阅机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-17.htm" title="免费QV2ray节点 - 8月17日21.2M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点订阅机场分享">免费QV2ray节点 - 8月17日21.2M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点订阅机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -258,7 +258,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
